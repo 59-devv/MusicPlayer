@@ -23,13 +23,13 @@
                                 <inset key="scrollIndicatorInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Tom-3t-EHo">
                                     <size key="itemSize" width="180" height="240"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="414" height="296"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TrackCollectionViewCell" id="Gkk-Mr-KhN" customClass="TrackCollectionViewCell" customModule="MusicPlayer" customModuleProvider="target">
-                                        <rect key="frame" x="5" y="0.0" width="180" height="240"/>
+                                        <rect key="frame" x="5" y="301" width="180" height="240"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Qqr-8y-DAc">
                                             <rect key="frame" x="0.0" y="0.0" width="180" height="240"/>
@@ -73,6 +73,74 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TrackCollectionHeaderView" id="Q9F-lL-N2Z" customClass="TrackCollectionHeaderView" customModule="MusicPlayer" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="296"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Pick!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jJ-bl-WLN">
+                                            <rect key="frame" x="5" y="30" width="114.5" height="22"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l2F-e5-3lz">
+                                            <rect key="frame" x="5" y="57" width="404" height="200"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="200" id="zki-9T-e7c"/>
+                                            </constraints>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Mj-bl-6v0">
+                                            <rect key="frame" x="5" y="57" width="404" height="200"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain"/>
+                                            <connections>
+                                                <action selector="cardTapped:" destination="Q9F-lL-N2Z" eventType="touchUpInside" id="Llm-Kk-U5L"/>
+                                            </connections>
+                                        </button>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GZj-IC-RSy">
+                                            <rect key="frame" x="364" y="212.5" width="35" height="34"/>
+                                            <color key="tintColor" systemColor="systemPinkColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="35" id="XHo-pL-Qf3"/>
+                                                <constraint firstAttribute="height" constant="35" id="ZtP-xE-0Dg"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play Now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHI-uj-aIp">
+                                            <rect key="frame" x="20" y="191.5" width="64" height="17"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label LAble todays pick is silo's album dddddddddd" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7W-jF-Y7X">
+                                            <rect key="frame" x="20" y="213.5" width="213.5" height="33.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="GZj-IC-RSy" firstAttribute="bottom" secondItem="l2F-e5-3lz" secondAttribute="bottom" constant="-10" id="18C-ty-n0Y"/>
+                                        <constraint firstAttribute="trailing" secondItem="l2F-e5-3lz" secondAttribute="trailing" constant="5" id="1su-QP-k6u"/>
+                                        <constraint firstItem="wHI-uj-aIp" firstAttribute="leading" secondItem="l2F-e5-3lz" secondAttribute="leading" constant="15" id="3ra-Pa-QiE"/>
+                                        <constraint firstItem="2Mj-bl-6v0" firstAttribute="leading" secondItem="l2F-e5-3lz" secondAttribute="leading" id="E5a-0d-fKU"/>
+                                        <constraint firstItem="GZj-IC-RSy" firstAttribute="trailing" secondItem="l2F-e5-3lz" secondAttribute="trailing" constant="-10" id="EP0-nP-xaC"/>
+                                        <constraint firstItem="GZj-IC-RSy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="P7W-jF-Y7X" secondAttribute="trailing" constant="15" id="Edy-VJ-tzd"/>
+                                        <constraint firstItem="2Mj-bl-6v0" firstAttribute="bottom" secondItem="l2F-e5-3lz" secondAttribute="bottom" id="GBZ-6Q-j0d"/>
+                                        <constraint firstItem="7jJ-bl-WLN" firstAttribute="top" secondItem="Q9F-lL-N2Z" secondAttribute="top" constant="30" id="NLk-HI-N6z"/>
+                                        <constraint firstItem="P7W-jF-Y7X" firstAttribute="leading" secondItem="l2F-e5-3lz" secondAttribute="leading" constant="15" id="QEX-TV-nu5"/>
+                                        <constraint firstItem="l2F-e5-3lz" firstAttribute="top" secondItem="7jJ-bl-WLN" secondAttribute="bottom" constant="5" id="R03-ce-o3m"/>
+                                        <constraint firstItem="l2F-e5-3lz" firstAttribute="leading" secondItem="Q9F-lL-N2Z" secondAttribute="leading" constant="5" id="gmF-aW-QfK"/>
+                                        <constraint firstItem="2Mj-bl-6v0" firstAttribute="trailing" secondItem="l2F-e5-3lz" secondAttribute="trailing" id="lSK-U2-VBr"/>
+                                        <constraint firstItem="2Mj-bl-6v0" firstAttribute="top" secondItem="l2F-e5-3lz" secondAttribute="top" id="sLQ-F3-NON"/>
+                                        <constraint firstItem="P7W-jF-Y7X" firstAttribute="bottom" secondItem="l2F-e5-3lz" secondAttribute="bottom" constant="-10" id="tHQ-Aw-2Eu"/>
+                                        <constraint firstItem="P7W-jF-Y7X" firstAttribute="top" secondItem="wHI-uj-aIp" secondAttribute="bottom" constant="5" id="yni-U9-yCJ"/>
+                                        <constraint firstItem="7jJ-bl-WLN" firstAttribute="leading" secondItem="Q9F-lL-N2Z" secondAttribute="leading" constant="5" id="zEN-vl-ShF"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="descriptionLabel" destination="P7W-jF-Y7X" id="TsG-vO-a0i"/>
+                                        <outlet property="thumbnailImageView" destination="l2F-e5-3lz" id="9fW-Vh-O3r"/>
+                                    </connections>
+                                </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="hx5-uD-C2A"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="XR4-17-sxj"/>
@@ -95,8 +163,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="play.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

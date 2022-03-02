@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE21934727CF659C002A28F3 /* TrackCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21934627CF659C002A28F3 /* TrackCollectionHeaderView.swift */; };
 		EEBF13E227CE636D006EFD64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBF13E127CE636D006EFD64 /* AppDelegate.swift */; };
 		EEBF13E427CE636D006EFD64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBF13E327CE636D006EFD64 /* SceneDelegate.swift */; };
 		EEBF13E627CE636D006EFD64 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBF13E527CE636D006EFD64 /* HomeViewController.swift */; };
@@ -39,9 +40,12 @@
 		EEBF142827CE7FF3006EFD64 /* tranquility.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEBF141227CE7FF3006EFD64 /* tranquility.mp3 */; };
 		EEBF142927CE7FF3006EFD64 /* Sleepless.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEBF141327CE7FF3006EFD64 /* Sleepless.mp3 */; };
 		EEBF142B27CE8175006EFD64 /* Extension_AVPlayerITem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBF142A27CE8175006EFD64 /* Extension_AVPlayerITem.swift */; };
+		EEF0B03927CFA1F2009DB3EB /* Player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF0B03827CFA1F2009DB3EB /* Player.storyboard */; };
+		EEF0B03B27CFA203009DB3EB /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF0B03A27CFA203009DB3EB /* PlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE21934627CF659C002A28F3 /* TrackCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCollectionHeaderView.swift; sourceTree = "<group>"; };
 		EEBF13DE27CE636D006EFD64 /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEBF13E127CE636D006EFD64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEBF13E327CE636D006EFD64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,8 @@
 		EEBF141227CE7FF3006EFD64 /* tranquility.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tranquility.mp3; sourceTree = "<group>"; };
 		EEBF141327CE7FF3006EFD64 /* Sleepless.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sleepless.mp3; sourceTree = "<group>"; };
 		EEBF142A27CE8175006EFD64 /* Extension_AVPlayerITem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_AVPlayerITem.swift; sourceTree = "<group>"; };
+		EEF0B03827CFA1F2009DB3EB /* Player.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Player.storyboard; sourceTree = "<group>"; };
+		EEF0B03A27CFA203009DB3EB /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,7 @@
 		EEBF13E027CE636D006EFD64 /* MusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				EEF0B03727CFA1DC009DB3EB /* Player */,
 				EEBF13F827CE7E06006EFD64 /* Track */,
 				EEBF13F527CE6762006EFD64 /* Home */,
 				EEBF13FD27CE7FF3006EFD64 /* Resources */,
@@ -126,6 +133,7 @@
 				EEBF13E727CE636D006EFD64 /* Main.storyboard */,
 				EEBF13E527CE636D006EFD64 /* HomeViewController.swift */,
 				EEBF13F627CE6781006EFD64 /* TrackCollectionViewCell.swift */,
+				EE21934627CF659C002A28F3 /* TrackCollectionHeaderView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -167,6 +175,15 @@
 				EEBF141327CE7FF3006EFD64 /* Sleepless.mp3 */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		EEF0B03727CFA1DC009DB3EB /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				EEF0B03827CFA1F2009DB3EB /* Player.storyboard */,
+				EEF0B03A27CFA203009DB3EB /* PlayerViewController.swift */,
+			);
+			path = Player;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +249,7 @@
 				EEBF142427CE7FF3006EFD64 /* [ asleep ].mp3 in Resources */,
 				EEBF141A27CE7FF3006EFD64 /* Letting Go.mp3 in Resources */,
 				EEBF142027CE7FF3006EFD64 /* Ocean ride __ 海の乗り.mp3 in Resources */,
+				EEF0B03927CFA1F2009DB3EB /* Player.storyboard in Resources */,
 				EEBF141527CE7FF3006EFD64 /* im trying to find myself.mp3 in Resources */,
 				EEBF141627CE7FF3006EFD64 /* when the leaves start falling.mp3 in Resources */,
 				EEBF141C27CE7FF3006EFD64 /* elijah who - hello.mp3 in Resources */,
@@ -267,8 +285,10 @@
 				EEBF142B27CE8175006EFD64 /* Extension_AVPlayerITem.swift in Sources */,
 				EEBF13FA27CE7E2B006EFD64 /* Track.swift in Sources */,
 				EEBF13E627CE636D006EFD64 /* HomeViewController.swift in Sources */,
+				EEF0B03B27CFA203009DB3EB /* PlayerViewController.swift in Sources */,
 				EEBF13E227CE636D006EFD64 /* AppDelegate.swift in Sources */,
 				EEBF13E427CE636D006EFD64 /* SceneDelegate.swift in Sources */,
+				EE21934727CF659C002A28F3 /* TrackCollectionHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +437,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 588KK9ZA28;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MusicPlayer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -444,6 +465,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 588KK9ZA28;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MusicPlayer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
