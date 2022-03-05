@@ -8,6 +8,7 @@
 import UIKit
 import AVFoundation
 
+// 헤더뷰 설정
 class TrackCollectionHeaderView: UICollectionReusableView {
     
     @IBOutlet weak var thumbnailImageView: UIImageView!
@@ -16,6 +17,7 @@ class TrackCollectionHeaderView: UICollectionReusableView {
     var item: AVPlayerItem?
     var tapHandler: ((AVPlayerItem) -> Void)?
     
+    // 이 셀이 실제로 등장할 때 호출되는 메서드
     override func awakeFromNib() {
         super.awakeFromNib()
         thumbnailImageView.layer.cornerRadius = 4
@@ -34,7 +36,4 @@ class TrackCollectionHeaderView: UICollectionReusableView {
         guard let todaysItem = item else { return }
         tapHandler?(todaysItem)
     }
-    
-    
-    
 }

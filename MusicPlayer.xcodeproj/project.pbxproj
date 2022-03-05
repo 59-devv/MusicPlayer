@@ -41,6 +41,7 @@
 		EEBF142927CE7FF3006EFD64 /* Sleepless.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEBF141327CE7FF3006EFD64 /* Sleepless.mp3 */; };
 		EEBF142B27CE8175006EFD64 /* Extension_AVPlayerITem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBF142A27CE8175006EFD64 /* Extension_AVPlayerITem.swift */; };
 		EED47EC727D3885A00537607 /* SimplePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED47EC627D3885A00537607 /* SimplePlayer.swift */; };
+		EED47ECA27D3987500537607 /* DefaultStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED47EC927D3987500537607 /* DefaultStyle.swift */; };
 		EEF0B03927CFA1F2009DB3EB /* Player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF0B03827CFA1F2009DB3EB /* Player.storyboard */; };
 		EEF0B03B27CFA203009DB3EB /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF0B03A27CFA203009DB3EB /* PlayerViewController.swift */; };
 /* End PBXBuildFile section */
@@ -82,6 +83,7 @@
 		EEBF141327CE7FF3006EFD64 /* Sleepless.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sleepless.mp3; sourceTree = "<group>"; };
 		EEBF142A27CE8175006EFD64 /* Extension_AVPlayerITem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_AVPlayerITem.swift; sourceTree = "<group>"; };
 		EED47EC627D3885A00537607 /* SimplePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePlayer.swift; sourceTree = "<group>"; };
+		EED47EC927D3987500537607 /* DefaultStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStyle.swift; sourceTree = "<group>"; };
 		EEF0B03827CFA1F2009DB3EB /* Player.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Player.storyboard; sourceTree = "<group>"; };
 		EEF0B03A27CFA203009DB3EB /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +118,7 @@
 		EEBF13E027CE636D006EFD64 /* MusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				EED47EC827D3986700537607 /* Style */,
 				EEF0B03727CFA1DC009DB3EB /* Player */,
 				EEBF13F827CE7E06006EFD64 /* Track */,
 				EEBF13F527CE6762006EFD64 /* Home */,
@@ -177,6 +180,14 @@
 				EEBF141327CE7FF3006EFD64 /* Sleepless.mp3 */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		EED47EC827D3986700537607 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				EED47EC927D3987500537607 /* DefaultStyle.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 		EEF0B03727CFA1DC009DB3EB /* Player */ = {
@@ -285,6 +296,7 @@
 			files = (
 				EEBF13F727CE6781006EFD64 /* TrackCollectionViewCell.swift in Sources */,
 				EEBF13FC27CE7EB7006EFD64 /* TrackManager.swift in Sources */,
+				EED47ECA27D3987500537607 /* DefaultStyle.swift in Sources */,
 				EEBF142B27CE8175006EFD64 /* Extension_AVPlayerITem.swift in Sources */,
 				EEBF13FA27CE7E2B006EFD64 /* Track.swift in Sources */,
 				EED47EC727D3885A00537607 /* SimplePlayer.swift in Sources */,
