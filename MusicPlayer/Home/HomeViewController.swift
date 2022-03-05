@@ -48,7 +48,12 @@ extension HomeViewController: UICollectionViewDataSource {
             header.update(with: item)
             header.tapHandler = { item -> Void in
                 //Player를 띄운다.
-                print("---> item \(item.convertToTrack()?.title)")
+                let playerStoryboard = UIStoryboard.init(name: "Player", bundle: nil)
+                guard let playerVC = playerStoryboard.instantiateViewController(withIdentifier: "PlayerViewController")
+                        as? PlayerViewController else { return }
+                playerVC.simplePlayer.replaceCurrentItem(with: item)
+                
+                self.present(playerVC, animated: true, completion: nil)
             }
             
             return header
@@ -59,7 +64,16 @@ extension HomeViewController: UICollectionViewDataSource {
 }
 
 extension HomeViewController: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let playerStoryboard = UIStoryboard.init(name: "Player", bundle: nil)
+        guard let playerVC = playerStoryboard.instantiateViewController(withIdentifier: "PlayerViewController")
+                as? PlayerViewController else { return }
+        
+        let item = trackManager.tracks[indexPath.item]
+        playerVC.simplePlayer.replaceCurrentItem(with: item)
+        
+        present(playerVC, animated: true, completion: nil)
+    }
 }
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout {

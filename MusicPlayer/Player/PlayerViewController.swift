@@ -18,9 +18,10 @@ class PlayerViewController: UIViewController {
     @IBOutlet weak var totalDurationLabel: UILabel!
     
     // Simple Player를 만들고, 프로퍼티 추가하기
+    let simplePlayer = SimplePlayer.shared
+    
     var timeObserver: Any?
     var isSeeking: Bool = false
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
